@@ -10,17 +10,194 @@ namespace Arbetsboken
     {
         static void Main(string[] args)
         {
-            //u712();
-            //u713();
-            //u714();
-            //u715();
-            //u716();
-            //u717();
-            //u719();
-            //u7110();
-            //u731();
-            u733();
+            while (true)
+            {
+                Console.Clear();
+                Console.WriteLine("Meny");
+                Console.WriteLine("0. Avsluta");
+                Console.WriteLine("1. Summan av två tal");
+                Console.WriteLine("2. Summan och medelvärdet av tre tal");
+                Console.WriteLine("3. Decimaltal till heltal");
+                Console.WriteLine("4. En saga med två stringvariabler");
+                Console.WriteLine("5. Avrunda flyttal");
+                Console.WriteLine("6. Char");
+                Console.WriteLine("7. Felaktiga variabeltyper");
+                Console.WriteLine("8. Operatorn %");
+                Console.WriteLine("9. Kontrollera vädret del 1");
+                Console.WriteLine("10.Kontrollera vädret del 2");
+                Console.WriteLine("11.Kontrollera vädret del 3");
+                Console.WriteLine("12.Var är det kallast? del 1");
+                Console.WriteLine("13.Var är det kallast? del 2");
+                Console.WriteLine("14.Felaktig if-sats");
+                Console.WriteLine("15. Banksimulator");
+                Console.WriteLine();
+                Console.WriteLine("Välj den siffra som motsvarar programmet du vill köra");
+                int val = Convert.ToInt32(Console.ReadLine());
+                Console.Clear();
+                switch (val)
+                {
+                    case 0:
+                        return;
+                    case 1:
+                        u712();
+                        break;
+                    case 2:
+                        u713();
+                        break;
+                    case 3:
+                        u714();
+                        break;
+                    case 4:
+                        u715();
+                        break;
+                    case 5:
+                        u716();
+                        break;
+                    case 6:
+                        u717();
+                        break;
+                    case 7:
+                        u719();
+                        break;
+                    case 8:
+                        u7110();
+                        break;
+                    case 9:
+                        u731();
+                        break;
+                    case 10:
+                        u732();
+                        break;
+                    case 11:
+                        u733();
+                        break;
+                    case 12:
+                        u734();
+                        break;
+                    case 13:
+                        u735();
+                        break;
+                    case 14:
+                        u736();
+                        break;
+                    case 15:
+                        u742();
+                        break;
+                    default:
+                        Console.WriteLine("Ogiltligt val!");
+                        break;
+                }
+
+             
+            }
+            
         }
+        
+        static void u742()
+        {
+            while (true)
+            {
+                Console.WriteLine("[I]nsättning");
+                Console.WriteLine("[U]ttag");
+                Console.WriteLine("[S]aldo");
+                Console.WriteLine("[A]vsluta");
+
+                string val = Console.ReadLine();
+                Console.Clear();
+                
+                switch (val)
+                {
+                    case "I":
+                    ubreak;
+                   
+
+                    case "U":
+                    break;
+
+                    case "S":
+                    break;
+
+                    case "A":
+                    break;
+
+                    default:
+                    Console.WriteLine("Felaktigt val.");
+                    break;
+                   
+                    
+                }
+
+                           }
+        }
+
+        static void u736()
+        {
+            // Det saknades ett = tecken i parantesen. + var är inget bra namn.
+            int var = 10;
+            if (var == 10)
+                Console.WriteLine("den är 10!");
+        }
+        static void u735()
+        {
+            Console.Write("Ange temperaturen för Östersund: ");
+            int ostersund = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Ange temperaturen för Åmål: ");
+            int amal = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Ange temperaturen för Arboga: ");
+            int arboga = Convert.ToInt32(Console.ReadLine());
+
+            if ((ostersund < amal) && (ostersund < arboga))
+            {
+                Console.WriteLine("Det är kallast i Östersund.");
+            }
+            else if ((amal < arboga) && (amal < ostersund))
+            {
+                Console.WriteLine("Det är kallast i Åmål.");
+            }
+            else
+            {
+                Console.WriteLine("Det är kallast i Arboga.");
+            }
+            Console.ReadLine();
+        }
+        static void u734()
+        {
+            Console.Write("Hur många grader är det i Östersund? ");
+  
+            string osund = Console.ReadLine();
+
+            
+            Console.Clear();
+
+
+            Console.Write("Hur många grader är det i Åmål? ");
+           
+            string amal = Console.ReadLine();
+
+            Console.Clear();
+
+            int osundInt = Convert.ToInt32(osund);
+            int amalInt  = Convert.ToInt32(amal);
+
+           
+            if (amalInt < osundInt)
+            {
+                Console.Write("Det är kallast i Åmål.");
+            }
+            else if (osundInt < amalInt)
+            {
+                Console.Write("Det är kallast i Östersund.");
+            }
+            else 
+            {
+                Console.Write("Det är lika varmt eller kallt på båda orterna.");
+            }
+            
+            Console.ReadLine();
+        }
+            
 
         static void u733()
         {
