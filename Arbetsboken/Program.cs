@@ -24,12 +24,18 @@ namespace Arbetsboken
                 Console.WriteLine("7. Felaktiga variabeltyper");
                 Console.WriteLine("8. Operatorn %");
                 Console.WriteLine("9. Kontrollera vädret del 1");
-                Console.WriteLine("10.Kontrollera vädret del 2");
-                Console.WriteLine("11.Kontrollera vädret del 3");
-                Console.WriteLine("12.Var är det kallast? del 1");
-                Console.WriteLine("13.Var är det kallast? del 2");
-                Console.WriteLine("14.Felaktig if-sats");
+                Console.WriteLine("10. Kontrollera vädret del 2");
+                Console.WriteLine("11. Kontrollera vädret del 3");
+                Console.WriteLine("12. Var är det kallast? del 1");
+                Console.WriteLine("13. Var är det kallast? del 2");
+                Console.WriteLine("14. Felaktig if-sats");
                 Console.WriteLine("15. Banksimulator");
+                Console.WriteLine("16. Skriva ut en talföljd 1-20");
+                Console.WriteLine("17. Skriva ut en talföljd upp till 100");
+                Console.WriteLine("18. Krona eller klave");
+                Console.WriteLine("19. Felaktig loop");
+                Console.WriteLine("20. Yatzy");
+                
                 Console.WriteLine();
                 Console.WriteLine("Välj den siffra som motsvarar programmet du vill köra");
                 int val = Convert.ToInt32(Console.ReadLine());
@@ -83,6 +89,21 @@ namespace Arbetsboken
                     case 15:
                         u742();
                         break;
+                    case 16:
+                        u751();
+                        break;
+                    case 17:
+                        u752();
+                        break;
+                    case 18:
+                        u753();
+                        break;
+                    case 19:
+                        u754();
+                        break;
+                    case 20:
+                        u755();
+                        break;
                     default:
                         Console.WriteLine("Ogiltligt val!");
                         break;
@@ -92,7 +113,45 @@ namespace Arbetsboken
             }
             
         }
+        static void u755()
+        {
+
+        }
+
+        static void u754()
+        {
+            string str;
+            do
+            {
+                Console.WriteLine("Vill du fortsätta loopen?");
+                str = Console.ReadLine();
+            }   while (str == "j"); //Saknades ett = tecken
+        }
+
+        static void u753()
         
+        {
+
+        }
+        static void u752()
+        {
+
+        }
+        static void u751()
+        {
+
+            int tal = 1;
+            do
+            {
+                Console.WriteLine(tal);
+                tal++;
+            }   while (tal < 21);    
+
+           
+            Console.ReadLine();
+            }
+
+
         static void u742()
         {
             while (true)
@@ -108,7 +167,7 @@ namespace Arbetsboken
                 switch (val)
                 {
                     case "I":
-                    ubreak;
+                    break;
                    
 
                     case "U":
